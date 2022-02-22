@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    system("chcp 65001");
+    int a, b;
+    float r;
+    char c;
+    cout << "введите первое число= ";
+    cin >> a;
+    cout << "введите второе число= ";
+    cin >> b;
+    cout << "введите оперцию ";
+    cin >> c;
+    if (c=='+')
+    {
+        r=a + b;
+        cout << "результат= " << r;
+    }
+    if (c=='-')
+    {
+        r=a - b;
+        cout << "результат= " << r;
+    }
+    if (c=='*')
+    {
+        r=a * b;
+        cout << "результат= " << r;
+    }
+    if (c=='/')
+    {
+        r=a * (1./b);
+        cout << "результат= " << r;
+    }
+}
